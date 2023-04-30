@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header{
+    /* overflow-x: hidden; */
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    -webkit-box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.head{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around ;
+    /* column-gap: 2rem; */
+    font-size: 1.3em;
+}
+.sidebar{
+    display: none;
+}
+.logo{
+    width: 10vh;
+    height: 10vh;
+    background-image: url('../img/logo.webp');
+    background-size: cover;
+    position: relative;
+    left: -15vh;
+}
+.nav_option{
+text-align: center;
+}
+.nav_option ul{
+    display:flex ;
+    align-items: center;
+    list-style-type: none;
+}
+.nav_option ul li{
+    margin: 0 3vh;
+}
+.nav_option ul li a:hover{
+    color:rgb(238, 72, 53);
+    border-bottom: 1px solid black;
+}
+.nav_option ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+}
+
+@media only screen and (max-width: 800px) {
+.head{
+    font-size: 1.2em;
+}
+.logo{
+    width: 9vh;
+    height: 9vh;
+}
+}
+@media only screen and (max-width: 900px) {
+    .header{
+        transition: 0.4s;
+    }
+    .head{
+        justify-content: space-between;
+        transition:  .2s;
+    }
+    .sidebar{
+        position: absolute;
+        right: 10vh;
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        left: 10vh;
+    }
+.nav_option{
+    display: none;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top:0vh;
+    width: 0vh;
+    height:0 ;
+    transition: all 2s ease-in;
+    background-color:aquamarine;
+    -webkit-box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav_option ul{
+    display: block;
+    /* text-align: center; */
+}
+.nav_option ul li{
+    padding: 0 2vh;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.nav_option ul li:hover{
+    background-color: antiquewhite;
+}
+.nav_option_click{
+    display: block;
+    top: 10vh;
+    width: 30vh;
+    height: 100vh;
+    transition-delay: 1s;
+    transition: 0.3s;
+}
+}
+@media only screen and (max-width: 500px) {
+    .header{
+        /* justify-content: none; */
+        /* overflow: hidden; */
+    }
+.logo{
+left: 5vh;
+}
+.sidebar{
+    right: 5vh;
+}
+}

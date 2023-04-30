@@ -1,0 +1,113 @@
+.contact_section{
+    width: 100%;
+    scrollbar-width: none;
+    height: 85vh;
+    overflow: hidden;
+    background-color:aliceblue;
+}
+.contact_title{
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+.section_container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+.contact_img{
+    width: 50%;
+    height: 70vh;
+    background-image: url("../img/contact-img.webp");
+    background-size: cover;
+}
+.contact_form{
+    background-color: slategray;;
+    height: 70vh;
+    width: 50%;
+    display: grid;
+place-items: center;
+}
+.contact_detail_form{
+position: relative;
+height: 80px;
+display: grid;
+place-items: center;
+width: 100%;
+/* max-width: 150px; */
+color: black;
+overflow: hidden;
+}
+.contact_detail_form input{
+    /* margin: 1vh 0; */
+    width: 100%;
+    /* padding: 10px; */
+    background-color: transparent;
+    font-size: 16px;
+    height: 10vh;
+    color: white;
+    letter-spacing: 1px;
+    /* margin-bottom: 30px; */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.contact-form-detail{
+    width: 36vh;
+    height: 60vh;
+
+}
+.contact_detail_form label{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color:white;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.contact_detail_form input:focus ~ label,
+.contact_detail_form input:valid ~ label{
+    top: -5px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+    border-color: rgb(5, 33, 187);
+}
+.contact_detail_form input:focus ~ input,
+.contact_detail_form input:valid ~ input{
+    
+    border-color: rgb(5, 33, 187);
+}
+.contact_btn{
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    margin-top: 2vh;
+    border-radius: 3vh;
+    background: black;
+    color: white;
+    font-size: 1.0em;
+}
+
+@media screen and (max-width:700px) {
+    .contact_section{
+        height: 100%;
+    }
+    .section_container{
+        width: 100%;
+        height: 140vh;
+        display: block;
+    }
+    .contact_img{
+        width: 100%;
+    }
+    .contact_form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.skill_section{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+.skill_section h1{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4em;
+    position: relative;
+    margin: 3vh 4vh;
+    top: 2vh;
+    color: white;
+}
+.skill_container{
+    display: flex;
+    justify-content: space-around;
+}
+.skill_subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 10vh;
+    height: 1vh;
+    border-radius: 2vh;
+    background-color: red;
+}
+.skill_subtitle_title{
+    color: white;
+    margin: 2vh 3vh;
+}
+.skill_info{
+    color: white;
+    width: 60vh;
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+.skill_info_title{
+    color: white;
+    text-align: left;
+}
+.skill_percentage{
+    margin: 5vh 0;
+width: 50vh;
+height: 40vh;
+/* background-color: red; */
+}
+.skill_percentage{
+    color: white;
+    
+}
+.percentage_skill h3{
+    position: relative;
+    top: 2.5vh;
+}
+.percentage_skill h4{
+    text-align: right;
+}
+.skill_percentage .skill_bar{
+width: 100%;
+height: 2vh;
+overflow: hidden;
+border-radius: 2vh;
+background-color: white;
+}
+
+.skill_bar div{
+    background-color: red;
+    width: 93%;
+    height: 100%;
+    
+}
+
+.sb2 div{
+width: 85%;
+}
+.sb3 div{
+width: 72%;
+}
+.sb4 div{
+width: 80%;
+}
+@media screen and (max-width: 750px) {
+.skill_container{
+    display: grid;
+    place-items: center;
+
+}
+.skill_percentage{
+    width:42vh;
+}
+.skill_info{
+    width: 40vh;
+    font-size: 1.2em;
+}
+}

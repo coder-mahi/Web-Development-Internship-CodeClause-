@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script
+      src="https://kit.fontawesome.com/a4e77060ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rushabh's portfolio</title>
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/skill.css" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+<style>
+  .hidden{
+    opacity: 0;
+margin-top: -10vh;
+    transition: all 1s;
+  }
+  .hiddenl{
+    opacity: 0;
+margin-left: -10vh;
+    transition: all 1s;
+  }
+  .hiddenr{
+    opacity: 0;
+margin-right: -10vh;
+    transition: all 1s;
+  }
+  .show{
+    opacity: 1;
+  margin-top:0;
+  }
+  
+  .showl{
+    opacity: 1;
+  margin-left:0;
+  }
+  .showr{
+    opacity: 1;
+  margin-right:0;
+  }
+
+</style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="header">
+        <nav class="head">
+          <div class="logo"></div>
+          <div class="sidebar"><i class="fa-solid fa-bars fa-1.3x"></i></div>
+          <div class="nav_option">
+            <ul>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#skill">skill</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- @@@@@@@header end -->
+      <div id="home" class="home_page_section ">
+        <div class="home_page_container">
+          <div class="home_page_profile ">
+            <div class="profile_img"></div>
+          </div>
+          <div class="home_page_profile_detail hidden">
+            <div class="profile_detail">
+              <h2>Hello, there</h2>
+              <h2>I'm Mahesh Shinde R</h2>
+              <p id="skill_name">
+                I'm into<span id="skill_name_span">front developer</span>
+              </p>
+              <button class="home_about_btn"><a href="#about">About me</a></button>
+            </div>
+              <div class="social_media_btn">
+               <a href="https://github.com/coder-mahi"> <i class="fa-brands fa-github"></i></a>
+              </div>
+             
+              <div class="social_media_btn">
+                <a href="https://www.instagram.com/mahi_shinde01/?utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about <section></section> -->
+      <div id="about" class="about_section">
+        <h1 class="about_section_title">About Me</h1>
+        <div class="about_container">
+          <div class="about_img hiddenl"></div>
+          <div class="about_info hiddenr">
+            <h1>I'm Rushabh</h1>
+            <h1 class="about_full">FullStack Developer</h1>
+            <p>I am a FullStack developer based in Yeola, Maharashtra. I am very passionate about improving my coding skills &
+              developing applications & websites. I build WebApps and Websites
+              using MERN Stack. Working for myself to improve my skills.
+            </p>
+            <p class="about_info_detail">
+              <span class="blue_color">Age:</span>18
+            </p>
+            <p class="about_info_detail">
+              <span class="blue_color">Email:</span>maheshshinde9100@gmail.com
+            </p>
+            <p class="about_info_detail">
+              <span class="blue_color">place:</span>Yeola
+            </p>
+            <p class="about_info_detail">
+              <span class="blue_color">Phone:</span>+919529544681
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- @@@skill  -->
+      <div id="skill" class="skill_section">
+        <h1>My Skills</h1>
+        <div class="skill_subtitle">
+          <div class="line"></div>
+          <div class="skill_subtitle_title">Skills I Know</div>
+          <div class="line"></div>
+        </div>
+        <div class="skill_container">
+          <div class="skill_info hidden">
+            <h1 class="skill_info_title">My Creative Skill</h1>
+            <p>
+              hi guys<b></b> Basically I'm a FullStack developer having no work
+              experience, in my whole journey i have created lots of project like
+              cloning websites, shopping web,protofolio website,etc language
+              that i learn are html ,css,javascript,react-js,c,c++,java,latex
+            </p>
+          </div>
+          <div class="skill_percentage">
+            <div class="percentage_skill hidden">
+              <h3>HTML</h3>
+              <h4>89%</h4>
+              <div class="skill_bar sb1">
+                <div class=""></div>
+              </div>
+            </div>
+            <div class="percentage_skill hiddenr">
+              <h3>CSS</h3>
+              <h4>86%</h4>
+              <div class="skill_bar sb2">
+                <div></div>
+              </div>
+            </div>
+            <div class="percentage_skill hiddenl">
+              <h3>JS</h3>
+              <h4>65%</h4>
+              <div class="skill_bar sb3">
+                <div></div>
+              </div>
+            </div>
+            <div class="percentage_skill hiddenr">
+              <h3>REACT JS</h3>
+              <h4>75%</h4>
+              <div class="skill_bar sb4">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact_section">
+        <h1 class="contact_title hiddenr">Contact Me</h1>
+        <div class="section_container hiddenl">
+          <div class="contact_img"></div>
+          <div class="contact_form">
+            <h1 class="contact_title">Contact Form</h1>
+            <div class="contact-form-detail">
+              <div class="contact_detail_form">
+                <input
+                  type="text"
+                  name="first-name"
+                  autocomplete="off"
+                  required
+                />
+                <label for="first-name" class="label-wrapper">
+                  <span class="label-text">first name</span>
+                </label>
+              </div>
+              <div class="contact_detail_form">
+                <input
+                  type="text"
+                  name="first-name"
+                  autocomplete="off"
+                  required
+                />
+                <label for="first-name" class="label-wrapper">
+                  <span class="label-text">LAST name</span>
+                </label>
+              </div>
+              <div class="contact_detail_form">
+                <input
+                  type="text"
+                  name="first-name"
+                  autocomplete="off"
+                  required
+                />
+                <label for="first-name" class="label-wrapper">
+                  <span class="label-text">email</span>
+                </label>
+              </div>
+              <button type="submit" class="contact_btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-detail section1">
+          <h2>Mahesh_Portfolio</h2>
+          <p class="thanks">
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+          </p>
+
+          <p class="keep">
+            Keep Rising ??. Connect with me over live chat!
+          </p>
+        </div>
+        <div class="footer-detail section2">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-detail section3">
+          <h2>Contact Info</h2>
+          <p>+919529544681</p>
+          <p>maheshshinde9100@gmail.com</p>
+          <p>Yeola-India-423402</p>
+          <ul class="social-link s">
+            <li>
+              <a href="https://github.com/coder-mahi"> <i class="fa-brands fa-github"></i></a>
+            </li>
+            
+            <li>
+              <a href="https://www.instagram.com/mahi_shinde01/?utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="rounder.js"></script>
+  </body>
+</html>
